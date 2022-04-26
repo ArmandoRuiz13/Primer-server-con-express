@@ -9,6 +9,11 @@ app.get('/',(req,res) =>{
 app.get('/launchx',(req,res) =>{
     res.send("Ahora estoy en lauchX")
 })
+//Regresando un objeto
+app.get('/explorersInNode',(req,res) => {
+    const explorer = {name: "Explorer", msg: "Hellow"}
+    res.send(explorer)
+})
 
 app.listen(port,() => {
     console.log("Server Listo!")
