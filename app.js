@@ -6,6 +6,9 @@ const port = 3000 //localhost definido por nosotros
 app.get('/',(req,res) =>{
     res.send("Hola a todos!")
 })
+app.get('/launchx',(req,res) =>{
+    res.send("Ahora estoy en lauchX")
+})
 
 app.listen(port,() => {
     console.log("Server Listo!")
